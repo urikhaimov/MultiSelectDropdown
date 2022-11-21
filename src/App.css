@@ -7,10 +7,9 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+main {
+  width: 600px;
 }
 
 .App-header {
@@ -28,11 +27,46 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.form {
+  display: grid;
+  width: 200px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  text-align: start;
+  margin: 50px;
+}
+
+.grid-col-2 {
+  grid-column: span 2;
+}
+
+.flex {
+  display: flex;
+}
+
+.seleted-options {
+  font-size: 10px;
+  height: 1.5em;
+  font-weight: bold;
+  color: darkorange;
+  margin-top: 20px;
+
+
+}
+
+.form label {
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+
+
+}
+
+
+.button-section {
+  text-align: right;
+  padding-top: 50px;
 }

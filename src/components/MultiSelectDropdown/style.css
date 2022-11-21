@@ -1,0 +1,111 @@
+.multi-select-drop-down {
+  width: fit-content;
+  background-color: black;
+  color: azure;
+  font-size: 14px;
+  padding: 1px;
+  text-align: left;
+  position: relative;
+}
+
+.multi-select-drop-down .render-list-container {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px 0;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: black;
+  color: azure;
+  width: 100%
+}
+
+.multi-select-drop-down .no-items {
+  padding-left: 10px;
+}
+
+.multi-select-drop-down .deselect-all {
+  color: yellowgreen;
+  font-size: 10px;
+  background-color: black;
+  padding: 5px;
+  width: 45%;
+  cursor: pointer;
+}
+
+.multi-select-drop-down .select-all {
+  color: yellowgreen;
+  font-size: 10px;
+  background-color: black;
+  padding: 5px;
+  width: 55%;
+  cursor: pointer;
+}
+
+.multi-select-drop-down .render-list ul {
+  all: unset;
+  text-align: left;
+}
+
+.multi-select-drop-down .render-list ul li {
+  padding: 3px;
+}
+
+.multi-select-drop-down .render-list ul li .no-multiple-label {
+  padding: 3px;
+  cursor: pointer;
+}
+
+.multi-select-drop-down .render-list .active {
+  padding: 3px;
+  cursor: pointer;
+  background-color: blue;
+  color: antiquewhite;
+  font-weight: bold;
+
+}
+
+
+a {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 10px 15px 10px 10px;
+  position: relative;
+  text-decoration: none;
+}
+
+a.arrow:before,
+a:after {
+  border-right: 2px solid;
+  content: '';
+  display: block;
+  height: 8px;
+  margin-top: -6px;
+  position: absolute;
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  right: 10px;
+  top: 50%;
+  width: 0;
+  cursor: pointer;
+}
+
+a.arrow:after {
+  margin-top: -1px;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+a.arrow:hover,
+a.arrow:focus,
+a.arrow:hover:before,
+a.arrow:hover:after,
+a.arrow:focus:before,
+a.arrow:focus:after {
+  color: whitesmoke;
+}
